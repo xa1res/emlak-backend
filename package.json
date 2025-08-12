@@ -1,18 +1,22 @@
 {
-  "name": "backend",
+  "name": "emlak-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Emlak backend API for Penta Nest",
   "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["emlak", "api", "backend", "real-estate"],
+  "author": "Penta Nest",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -20,5 +24,8 @@
     "@types/node": "^20.14.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
