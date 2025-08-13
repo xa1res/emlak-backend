@@ -621,7 +621,7 @@ namespace PentaNest.Emlak.Api.Services
                         },
                         new Property
                         {
-                            Id = "1231950448",
+                            Id = "12345678900",
                             ImageURL = "https://i0.shbdn.com/photos/95/04/48/x5_1231950448gs5.jpg",
                             Title = "  sdfsdfsdfsdf TABLO ADALAR DA SATILIK 1+1 DAİRE",
                             Price = 7300000,
