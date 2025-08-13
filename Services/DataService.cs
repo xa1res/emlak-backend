@@ -619,6 +619,40 @@ namespace PentaNest.Emlak.Api.Services
                             HaritaUrl = "https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d3118657.5066005797!2d28.3507636!3d40.240996!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d40.9399851!2d29.1568693!5e0!3m2!1str!2str!4v1753260460236!5m2!1str!2str",
                             ImageCount = 19
                         },
+                        new Property
+                        {
+                            Id = "1231950448",
+                            ImageURL = "https://i0.shbdn.com/photos/95/04/48/x5_1231950448gs5.jpg",
+                            Title = "  sdfsdfsdfsdf TABLO ADALAR DA SATILIK 1+1 DAİRE",
+                            Price = 7300000,
+                            Location = "Ankara Maltepe",
+                            Emlakci = "Şerife Çelik",
+                            Durum = "Satılık",
+                            KonumLinki = "https://www.google.com/maps/dir//40.9399851,29.1568693/@40.240996,28.3507636,7z?entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+                            Aciklama = "TABLO ADALAR PROJESİ ; 15.000 m2 arazi üzerinde 2 Blok 316 Daireden oluşan bir alana sahiptir.\nProje prestijli sitelerin bulunduğu bir bölgede yeralmaktadır.\nGENEL ÖZELLİKLER\n64 M2 net 42 M2\nBalkon 6 M2\nOcak - Fırın - Bulaşık Makinası Sıemens Marka Ankastre\nDavlumbaz Teka Marka\nKapaklı Vestiyer\nÇamaşır Makinası Alanı\nKlima Alt Yapısı Hazır\nYerler Ahşap Parke Zemin\nMerkezi Isıtma Sistemi\nDaireye Ait Özel Depo\nÖzel Otopark Alanı\nAçık ve Kapalı Yüzme Havuz\nSauna - Fitness Salonu\nTenis Kortu , Basketbol Sahası\nÇocuk Oyun Alanları\nYürüyüş Yolları , Seyir Terası\n22 Adet Elektrikli Şarj İstasyonu\n24 Saat Canlı Güven\nEsenkent Metro Durağına 1 Dakika , E-5 Otoyolu 2 Dakika , Maltepe Park & Pizza AVM 2 Dakika\nAnatolium & Ikea AVM 4 Dakika, Maltepe Sahil 10 Dakika , Bostancı İdo 15 Dakika , 15 Temmuz Şehitler Köprüsü 20 Dakika ,\nSabiha Gökçen Havaalanı 20 Dakika , Avrasya Tüneli 25 Dakika mesafede bulunmaktadır\nDETAYLAR İÇİN LÜTFEN ARAYINIZ",
+                            M2 = 64,
+                            OdaSayisi = "1+1",
+                            IlanTarihi = "2025-07-21",
+                            EmlakTipi = "Satılık Daire",
+                            BinaYasi = 0,
+                            BulunduguKat = "6. Kat",
+                            KatSayisi = 15,
+                            Isitma = "Merkezi Isıtma Sistemi",
+                            BanyoSayisi = "1",
+                            MutfakTipi = "Açık",
+                            Balkon = "Var",
+                            Asansor = "Var",
+                            Otopark = "Var & Kapalı Otopark",
+                            Esyali = "Hayır",
+                            KullanimDurumu = "Boş",
+                            SiteIcerisinde = "Var",
+                            KrediyeUygun = "Hayır",
+                            TapuDurumu = "Kat Mülkiyetli",
+                            Kimden = "Emlak Ofisinden",
+                            Takas = "Evet",
+                            HaritaUrl = "https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d3118657.5066005797!2d28.3507636!3d40.240996!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d40.9399851!2d29.1568693!5e0!3m2!1str!2str!4v1753260460236!5m2!1str!2str",
+                            ImageCount = 19
+                        },
                     }
                 }
             };
