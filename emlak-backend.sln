@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emlak-backend", "emlak-backend.csproj", "{636791C3-11FE-59FE-4625-149FBC7D879C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PentaNest.Emlak.Api", "PentaNest.Emlak.Api\PentaNest.Emlak.Api.csproj", "{89C10E20-7D20-DF8E-206E-78DBEAEEF52D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{636791C3-11FE-59FE-4625-149FBC7D879C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636791C3-11FE-59FE-4625-149FBC7D879C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636791C3-11FE-59FE-4625-149FBC7D879C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636791C3-11FE-59FE-4625-149FBC7D879C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C10E20-7D20-DF8E-206E-78DBEAEEF52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C10E20-7D20-DF8E-206E-78DBEAEEF52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C10E20-7D20-DF8E-206E-78DBEAEEF52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C10E20-7D20-DF8E-206E-78DBEAEEF52D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7C195C6-6A9D-41CF-AD00-FBB6F438EC7D}
+	EndGlobalSection
+EndGlobal

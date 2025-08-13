@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("emlak-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd482adc190eb96b5ce6f4afc7947b2619f4e96f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb713b7afc1fbb78026cefe14ab3eb860de110f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("emlak-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("emlak-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,11 +9,6 @@ C:\Dersler\Staj\Penta\emlak-backend\obj\Debug\net9.0\emlak-backend.MvcApplicatio
 C:\Dersler\Staj\Penta\emlak-backend\obj\Debug\net9.0\emlak-backend.sourcelink.json
 C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\appsettings.Development.json
 C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\appsettings.json
-C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\PentaNest.Emlak.Api\appsettings.Development.json
-C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\PentaNest.Emlak.Api\appsettings.json
-C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\PentaNest.Emlak.Api\obj\PentaNest.Emlak.Api.csproj.nuget.dgspec.json
-C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\PentaNest.Emlak.Api\obj\project.assets.json
-C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\PentaNest.Emlak.Api\Properties\launchSettings.json
 C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\emlak-backend.staticwebassets.endpoints.json
 C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\emlak-backend.exe
 C:\Dersler\Staj\Penta\emlak-backend\bin\Debug\net9.0\emlak-backend.deps.json
