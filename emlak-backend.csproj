@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="PentaNest.Emlak.Api\**\*.cs" />
+    <EmbeddedResource Remove="PentaNest.Emlak.Api\**\*" />
+    <None Remove="PentaNest.Emlak.Api\**\*" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-namespace PentaNest.Emlak.Api;
+    namespace PentaNest.Emlak.Api;
 
 public class WeatherForecast
 {

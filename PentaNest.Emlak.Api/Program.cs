@@ -1,49 +1,65 @@
+// using deyimleri dosyanın en üstünde olmalıdır.
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace PentaNest.Emlak.Api;
+var builder = WebApplication.CreateBuilder(args);
 
-public class Program
+
+builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
 {
-    public static void Main(string[] args)
-    {
-        var builder = WebApplication.CreateBuilder(args);
-
-        // Add services to the container.
-        builder.Services.AddAuthorization();
-
-        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-        builder.Services.AddOpenApi();
-
-        var app = builder.Build();
-
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
         {
-            app.MapOpenApi();
-        }
+            builder.WithOrigins("http://localhost:4200") 
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+        });
+});
 
-        app.UseHttpsRedirection();
+builder.Services.AddAuthorization();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
-        app.UseAuthorization();
+var app = builder.Build();
 
-        var summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+app.UseSwagger();
+app.UseSwaggerUI();
 
-        app.MapGet("/weatherforecast", (HttpContext httpContext) =>
-        {
-            var forecast =  Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                {
-                    Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    TemperatureC = Random.Shared.Next(-20, 55),
-                    Summary = summaries[Random.Shared.Next(summaries.Length)]
-                })
-                .ToArray();
-            return forecast;
-        })
-        .WithName("GetWeatherForecast");
+app.UseHttpsRedirection();
 
-        app.Run();
-    }
-}
+app.UseCors("AllowSpecificOrigin");
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+var ilanlar = new Ilan[]
+{
+    new Ilan("1", "https://via.placeholder.com/400x300", "Lüks Daire", 1500000, "Kadıköy, İstanbul", "Emlak Acentesi", "Satılık", 120, "3+1"),
+    new Ilan("2", "https://via.placeholder.com/400x300", "Geniş Villa", 8500000, "Bodrum, Muğla", "Emlak Acentesi", "Satılık", 300, "5+2"),
+    new Ilan("3", "https://via.placeholder.com/400x300", "Merkezi Konumda Dükkan", 50000, "Şişli, İstanbul", "Emlak Acentesi", "Kiralık", 80, null),
+    new Ilan("4", "https://via.placeholder.com/400x300", "Boğaz Manzaralı Yalı Dairesi", 25000000, "Beşiktaş, İstanbul", "Emlak Acentesi", "Satılık", 400, "4+1")
+};
+
+app.MapGet("/api/ilanlar", () => Results.Ok(ilanlar))
+.WithName("GetIlanlar");
+
+
+app.Run();app.Run();
+
+public record Ilan(
+    string Id,
+    string ImageURL,
+    string Title,
+    int Price,
+    string Location,
+    string Emlakci,
+    string Durum,
+    int M2,
+    string? OdaSayisi 
+);
